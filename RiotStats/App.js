@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from "./src/component/home";
+import Profile from "./src/component/profile";
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 export default function App() {
     return (
@@ -14,7 +15,7 @@ export default function App() {
                     component={Home}
                     options={{ title: 'Stats.GG' }}
                 />
-                {/*<Stack.Screen name="Profile" component={Profile} />*/}
+                <Stack.Screen name="Profile" component={Profile} />
             </Stack.Navigator>
         </NavigationContainer>
     );

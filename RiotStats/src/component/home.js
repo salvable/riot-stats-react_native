@@ -1,15 +1,23 @@
 import React, {useEffect, useState} from 'react'
-import {Button} from "@material-ui/core";
+import {View} from 'react-native';
+import {Button} from "react-native-web";
 
 
 
-const Home = () => {
 
+
+const Home = ({navigation}) => {
     return (
-        <div>
-            <Button> Button Test!!</Button>
-            <text> test</text>
-        </div>
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+            <Button
+                title="go to Profile"
+                onPress={() =>
+                    navigation.navigate('Profile', { userId: 'TEST' })
+                }>
+                Go To Profile
+            </Button>
+
+        </View>
 );
 
 };
