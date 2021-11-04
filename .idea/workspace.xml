@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="88f52a43-7c54-4bc4-b7a1-d4cc2d0e29b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RiotStats/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RiotStats/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/RiotStats/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RiotStats/src/component/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/RiotStats/src/component/home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,8 @@
       <workItem from="1635836907653" duration="6741000" />
       <workItem from="1635845361827" duration="1349000" />
       <workItem from="1635917061236" duration="84000" />
-      <workItem from="1635917147077" duration="5807000" />
+      <workItem from="1635917147077" duration="5890000" />
+      <workItem from="1636006156035" duration="665000" />
     </task>
     <servers />
   </component>
