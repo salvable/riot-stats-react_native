@@ -60,6 +60,11 @@ const Home = ({navigation}) => {
                             setSearch(e.target.value)
                             console.log(rotations)
                         }}
+                        onKeyPress={()=>{
+                            if(event.keyCode==13){
+                                navigation.navigate("Profile", { userId: search })
+                            }
+                        }}
                     />
                 </Box>
                 <Box
