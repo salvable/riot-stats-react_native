@@ -72,9 +72,11 @@ const Home = ({navigation}) => {
                     <div style={{paddingTop: "10%",  color: "white" }}><h3>주간 로테이션</h3></div>
                     <div>
                         {
+                            // Todo 롤 클라이언트의 버전이 바뀜에 따라 해당 버전도 업데이트 해줘야 함
                             rotations.map(rotation => (
-                                <img src={`https://ddragon.leagueoflegends.com/cdn/10.6.1/img/champion/${rotation.En_name}.png`} title={rotation.Kr_name}/>
-                            ))
+                                <img src={`https://ddragon.leagueoflegends.com/cdn/11.23.1/img/champion/${rotation.En_name}.png`} title={rotation.Kr_name} style={{width: "8%"}}>
+                                </img>
+                                ))
                         }
                     </div>
                 </Box>
