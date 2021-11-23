@@ -8,12 +8,12 @@ import axios from "axios";
 
 const Profile = ({ navigation, route }) => {
     // summoner는 accountId, id, name, profileIconId, puuid,summonerLevel을 가짐
-    const [summonerInfo,setSummonerInfo] = useState("")
+    const [summoner,setSummoner] = useState("")
 
     useEffect(() => {
         async function getSummoner(){
-            const summonerInfo = await axios.get(`http://localhost:3000/summonerInfo/${route.params.userId}`)
-            setSummonerInfo(summonerInfo.data.summoner)
+            const summonerInfo = await axios.get(`http://localhost:3000/summoner/${route.params.userId}`)
+            setSummoner(summonerInfo.data.summoner)
         }
         getSummoner()
     }, []);
