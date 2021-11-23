@@ -58,7 +58,6 @@ const Home = ({navigation}) => {
                         }}
                         onChange={async (e)=>{
                             setSearch(e.target.value)
-                            console.log(rotations)
                         }}
                         onKeyPress={()=>{
                             if(event.keyCode==13){
