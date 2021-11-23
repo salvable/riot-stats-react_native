@@ -9,6 +9,7 @@ import axios from "axios";
 const Profile = ({ navigation, route }) => {
     // summoner는 accountId, id, name, profileIconId, puuid,summonerLevel을 가짐
     const [summoner,setSummoner] = useState("")
+    const [rank,setRank] = useState("")
 
     useEffect(() => {
         async function getSummoner(){
@@ -17,6 +18,15 @@ const Profile = ({ navigation, route }) => {
         }
         getSummoner()
     }, []);
+
+    useEffect(() => {
+        async function getRank(){
+            const rank = await axios.get(`http://localhost:3000/rank/${summoner.id}`)
+            console.log(rank.data)
+            setRank(rank.data.summoner)
+        }
+        getRank()
+    }, [summoner]);
 
 
     return (
