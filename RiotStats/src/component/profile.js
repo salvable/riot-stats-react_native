@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react'
-import {Button, TextField} from "@material-ui/core";
+import {Box, Button, Grid, InputAdornment, TextField} from "@material-ui/core";
 import {View} from "react-native";
 import {Text} from "react-native-web";
 import axios from "axios";
+import SearchIcon from "@material-ui/icons/Search";
 
 
 
@@ -30,10 +31,15 @@ const Profile = ({ navigation, route }) => {
 
 
     return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Text>This is {route.params.userId}'s profile</Text>
-
-        </View>
+        <Grid container spacing={6} style={{height: "100%", marginTop: 5, backgroundColor: "#222222"}}>
+            <Grid item xs={2}/>
+            <Grid item xs={8}>
+                <Box align="center">
+                   
+                </Box>
+            </Grid>
+            <Grid item xs={2}/>
+        </Grid>
     )
 }
 

@@ -31,8 +31,7 @@ const Home = ({navigation}) => {
 
     return (
         <Grid container spacing={6} style={{height: "100%", marginTop: 5, backgroundColor: "#222222"}}>
-            <Grid item xs={2}>
-            </Grid>
+            <Grid item xs={2}/>
             <Grid item xs={8}>
                 <Box align="center">
                     <h1 style={{ color: "white" }}>STATS.GG</h1>
@@ -86,8 +85,7 @@ const Home = ({navigation}) => {
                 </Box>
 
                 </Grid>
-            <Grid item xs={2}>
-            </Grid>
+            <Grid item xs={2}/>
         </Grid>
     );
 };
