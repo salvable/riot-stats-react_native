@@ -30,7 +30,8 @@ const Home = ({navigation}) => {
     }, []);
 
     return (
-        <Grid container spacing={6} style={{height: "100%", marginTop: 5, backgroundColor: "#222222"}}>
+
+        <Grid container spacing={6} style={{height: "100%", marginTop: "5", backgroundColor: "#323232"}}>
             <Grid item xs={2}/>
             <Grid item xs={8}>
                 <Box align="center">

@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88f52a43-7c54-4bc4-b7a1-d4cc2d0e29b2" name="Default Changelist" comment="" />
+    <list default="true" id="88f52a43-7c54-4bc4-b7a1-d4cc2d0e29b2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiotStats/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/RiotStats/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiotStats/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/RiotStats/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiotStats/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/RiotStats/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiotStats/src/component/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/RiotStats/src/component/home/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiotStats/src/component/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/RiotStats/src/component/profile/profile.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,6 +37,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workSpace\react-native\riot-stats\RiotStats\src\component\home" />
+      <recent name="C:\workSpace\react-native\riot-stats\RiotStats\src\component\profile" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="js.build_tools.npm">
@@ -65,6 +85,8 @@
       <workItem from="1636009927618" duration="3900000" />
       <workItem from="1637574386291" duration="1743000" />
       <workItem from="1637666801484" duration="3302000" />
+      <workItem from="1637747335210" duration="410000" />
+      <workItem from="1637836173814" duration="4203000" />
     </task>
     <servers />
   </component>

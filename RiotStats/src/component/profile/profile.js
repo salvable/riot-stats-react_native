@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import {Box, Button, Grid, InputAdornment, TextField} from "@material-ui/core";
+import {Box, Button, Grid, InputAdornment, Paper, TextField} from "@material-ui/core";
 import {View} from "react-native";
 import {Text} from "react-native-web";
 import axios from "axios";
@@ -16,6 +16,7 @@ const Profile = ({ navigation, route }) => {
         async function getSummoner(){
             const summonerInfo = await axios.get(`http://localhost:3000/summoner/${route.params.userId}`)
             setSummoner(summonerInfo.data.summoner)
+            console.log(summonerInfo)
         }
         getSummoner()
     }, []);
@@ -31,12 +32,17 @@ const Profile = ({ navigation, route }) => {
 
 
     return (
-        <Grid container spacing={6} style={{height: "100%", marginTop: 5, backgroundColor: "#222222"}}>
+        <Grid container spacing={6} style={{height: "100%", marginTop: 5, backgroundColor: "#323232"}}>
             <Grid item xs={2}/>
             <Grid item xs={8}>
-                <Box align="center">
-                   
-                </Box>
+                <Paper style={{backgroundColor: "#272525", height: "20%"}}>
+                    <box>
+                        <img src={`http://ddragon.leagueoflegends.com/cdn/11.23.1/img/profileicon/${summoner.profileIconId}.png`}/>
+                    </box>
+                        <h1>qeqwe</h1>
+
+                </Paper>
+                <Paper style={{backgroundColor: "#272525", height: "20%"}}></Paper>
             </Grid>
             <Grid item xs={2}/>
         </Grid>
