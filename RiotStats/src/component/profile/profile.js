@@ -35,14 +35,21 @@ const Profile = ({ navigation, route }) => {
         <Grid container spacing={6} style={{height: "100%", marginTop: 5, backgroundColor: "#323232"}}>
             <Grid item xs={2}/>
             <Grid item xs={8}>
-                <Paper style={{backgroundColor: "#272525", height: "20%"}}>
-                    <box>
-                        <img src={`http://ddragon.leagueoflegends.com/cdn/11.23.1/img/profileicon/${summoner.profileIconId}.png`}/>
+                    <box style={{display: "flex", marginTop: 20}}>
+                        <img src={`http://ddragon.leagueoflegends.com/cdn/11.23.1/img/profileicon/${summoner.profileIconId}.png`} style={{width: "10%"}} />
+                        <box>
+                            <h1 style={{color: "white", marginLeft: "10px"}}>{route.params.userId}</h1>
+                            <Button
+                                style={{marginLeft: "10px"}}
+                                fullWidth
+                                variant="contained"
+                                color="primary"
+                            >
+                                전적갱신
+                            </Button>
+                        </box>
                     </box>
-                        <h1>qeqwe</h1>
 
-                </Paper>
-                <Paper style={{backgroundColor: "#272525", height: "20%"}}></Paper>
             </Grid>
             <Grid item xs={2}/>
         </Grid>
