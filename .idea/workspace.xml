@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="88f52a43-7c54-4bc4-b7a1-d4cc2d0e29b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RiotStats/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/RiotStats/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RiotStats/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/RiotStats/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RiotStats/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/RiotStats/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RiotStats/src/component/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/RiotStats/src/component/home/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RiotStats/src/component/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/RiotStats/src/component/profile/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiotStats/src/component/home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/RiotStats/src/component/home/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiotStats/src/component/profile/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/RiotStats/src/component/profile/profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +84,7 @@
       <workItem from="1637666801484" duration="3302000" />
       <workItem from="1637747335210" duration="410000" />
       <workItem from="1637836173814" duration="4203000" />
+      <workItem from="1637926138793" duration="1032000" />
     </task>
     <servers />
   </component>

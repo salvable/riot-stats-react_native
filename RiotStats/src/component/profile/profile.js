@@ -11,6 +11,7 @@ const Profile = ({ navigation, route }) => {
     // summoner는 accountId, id, name, profileIconId, puuid,summonerLevel을 가짐
     const [summoner,setSummoner] = useState("")
     const [rank,setRank] = useState("")
+    const [search,setSearch] = useState("")
 
     useEffect(() => {
         async function getSummoner(){
@@ -18,8 +19,8 @@ const Profile = ({ navigation, route }) => {
             setSummoner(summonerInfo.data.summoner)
             console.log(summonerInfo)
         }
-        getSummoner()
-    }, []);
+        getSummoner(route.params.userId)
+    }, [route.params.userId]);
 
     useEffect(() => {
         async function getRank(){
@@ -35,6 +36,39 @@ const Profile = ({ navigation, route }) => {
         <Grid container spacing={6} style={{height: "100%", marginTop: 5, backgroundColor: "#323232"}}>
             <Grid item xs={2}/>
             <Grid item xs={8}>
+                    <box style={{display: "flex",justifyContent: "space-between", marginTop: 20}}>
+                        <h1 style={{color: "white"}}>STATS.GG</h1>
+                        <TextField
+                            variant="outlined"
+                            placeholder="KR Summoner Id"
+                            InputProps={{
+                                endAdornment: (
+                                    <InputAdornment position="end">
+                                        <SearchIcon
+                                            onClick={() =>
+                                                navigation.navigate("Profile", { userId: search })
+                                            }
+                                        />
+                                    </InputAdornment>
+                                ),
+                                style:{
+                                    backgroundColor: "white",
+                                    color: "black",
+                                    width: "100%",
+                                    margin: "20px",
+
+                                }
+                            }}
+                            onChange={async (e)=>{
+                                setSearch(e.target.value)
+                            }}
+                            onKeyPress={()=>{
+                                if(event.keyCode==13){
+                                    navigation.navigate("Profile", { userId: search })
+                                }
+                            }}
+                        />
+                    </box>
                     <box style={{display: "flex", marginTop: 20}}>
                         <img src={`http://ddragon.leagueoflegends.com/cdn/11.23.1/img/profileicon/${summoner.profileIconId}.png`} style={{width: "10%"}} />
                         <box>
