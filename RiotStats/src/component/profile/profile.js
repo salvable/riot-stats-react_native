@@ -36,8 +36,8 @@ const Profile = ({ navigation, route }) => {
         <Grid container spacing={6} style={{height: "100%", marginTop: 5, backgroundColor: "#323232"}}>
             <Grid item xs={2}/>
             <Grid item xs={8}>
-                    <box style={{display: "flex",justifyContent: "space-between", marginTop: 20}}>
-                        <h1 style={{color: "white"}}>STATS.GG</h1>
+                    <box style={{display: "flex",justifyContent: "space-between", marginTop: 20, backgroundColor: "#282828"}}>
+                        <h1 style={{color: "white", marginLeft: "10px"}}>STATS.GG</h1>
                         <TextField
                             variant="outlined"
                             placeholder="KR Summoner Id"
@@ -54,7 +54,7 @@ const Profile = ({ navigation, route }) => {
                                 style:{
                                     backgroundColor: "white",
                                     color: "black",
-                                    width: "100%",
+                                    width: "80%",
                                     margin: "20px",
 
                                 }
@@ -69,12 +69,12 @@ const Profile = ({ navigation, route }) => {
                             }}
                         />
                     </box>
-                    <box style={{display: "flex", marginTop: 20}}>
-                        <img src={`http://ddragon.leagueoflegends.com/cdn/11.23.1/img/profileicon/${summoner.profileIconId}.png`} style={{width: "10%"}} />
+                    <box style={{display: "flex", marginTop: 20, backgroundColor: "#282828"}}>
+                        <img src={`http://ddragon.leagueoflegends.com/cdn/11.23.1/img/profileicon/${summoner.profileIconId}.png`} style={{width: "10%", margin:"5px"}} />
                         <box>
                             <h1 style={{color: "white", marginLeft: "10px"}}>{route.params.userId}</h1>
                             <Button
-                                style={{marginLeft: "10px"}}
+                                style={{margin: "10px"}}
                                 fullWidth
                                 variant="contained"
                                 color="primary"
@@ -84,6 +84,15 @@ const Profile = ({ navigation, route }) => {
                         </box>
                     </box>
 
+                <Grid container spacing={6} style={{height: "100%", marginTop: 5, backgroundColor: "#323232"}}>
+                    <Grid item xs={4}>
+                        <box ></box>
+                        <box></box>
+                    </Grid>
+                    <Grid item xs={8}>
+
+                    </Grid>
+                </Grid>
             </Grid>
             <Grid item xs={2}/>
         </Grid>
