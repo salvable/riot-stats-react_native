@@ -66,13 +66,7 @@ const Home = ({navigation}) => {
                         }}
                     />
                 </Box>
-                <Box
-                    style={{align: "center"}}
-                    sx={{
-                        width: "100%",
-                        height: 300,
-                    }}
-                >
+                <Box>
                     <div style={{paddingTop: "10%",  color: "white" }}><h3>주간 로테이션</h3></div>
                     <div>
                         {
